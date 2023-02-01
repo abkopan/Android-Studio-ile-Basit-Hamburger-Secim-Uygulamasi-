@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity2">
+    <ImageView
+        android:id="@+id/foto2"
+        android:layout_width="200dp"
+        android:layout_height="170dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/hmbrgr2"
+        />
+    <TextView
+        android:id="@+id/baslik2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HMBRGR' NİZ"
+        android:fontFamily="@font/bonfire"
+        android:textStyle="italic"
+        app:layout_constraintTop_toBottomOf="@id/foto2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
+        android:textColor="@color/black"
+        />
+
+    <LinearLayout
+        android:id="@+id/linear4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="25dp"
+        >
+
+        <TextView
+            android:id="@+id/tutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUTAR : "
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:textStyle="italic"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/secim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İÇECEK TERCİHİNİZ: "
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/secim2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EKMEK TERCİHİNİZ: "
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/secim3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KÖFTE TERCİHİNİZ: "
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+        <TextView
+            android:id="@+id/secim4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALZEME SEÇİMİNİZ: "
+            android:textStyle="italic"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_marginTop="5dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:id="@+id/afied"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="HMBRGR OLSUN"
+        android:layout_marginTop="55dp"
+        android:textSize="20sp"
+        android:fontFamily="@font/bonfire"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

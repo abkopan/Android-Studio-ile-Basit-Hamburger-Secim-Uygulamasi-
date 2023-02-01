@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+   <ImageView
+       android:id="@+id/foto"
+       android:layout_width="200dp"
+       android:layout_height="170dp"
+       app:layout_constraintTop_toTopOf="parent"
+       android:src="@drawable/hmbrgr2"
+       app:layout_constraintStart_toStartOf="parent"
+       app:layout_constraintEnd_toEndOf="parent"
+       />
+    <TextView
+        android:id="@+id/baslik"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintWidth_percent="0.6"
+        android:text="HMBRGR' NİZİ BAŞTAN YARATIN"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/foto"
+        android:fontFamily="@font/bonfire"
+        android:textStyle="italic"
+        />
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/baslik"
+        app:layout_constraintStart_toStartOf="parent"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:id="@+id/icecek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="İÇECEK SEÇİMİ"
+            android:textSize="16sp"
+            android:fontFamily="@font/saklifie"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="8dp"
+            />
+        <RadioGroup
+            android:id="@+id/radio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/icecek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kola  "
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"                />
+            <CheckBox
+                android:id="@+id/icecek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Fanta "
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"                />
+            <CheckBox
+                android:id="@+id/icecek3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Sprite"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/ekmek"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="EKMEK SEÇİMİ"
+            android:textSize="16sp"
+            android:fontFamily="@font/saklifie"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="8dp"
+            />
+        <RadioGroup
+            android:id="@+id/radio2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/ekmek1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Beyaz "
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"                />
+            <CheckBox
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                android:id="@+id/ekmek2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kepekli  ( +5 TL ) "
+                />
+            <CheckBox
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                android:id="@+id/ekmek3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Çavdarlı  ( +10 TL ) "
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/köfte"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KÖFTE SEÇİMİ"
+            android:fontFamily="@font/saklifie"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            />
+        <RadioGroup
+            android:id="@+id/radio3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/tavuk"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tavuk Köfte"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"                />
+            <CheckBox
+                android:id="@+id/et"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Et Köfte ( +15 TL )"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                android:layout_marginStart="45dp"
+                />
+        </RadioGroup>
+        <TextView
+            android:id="@+id/malzeme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="MALZEME SEÇİMİ ( MAX. 3 ADET )"
+            android:fontFamily="@font/saklifie"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="10dp"
+            />
+        <LinearLayout
+            android:id="@+id/linear2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <CheckBox
+                android:id="@+id/mantar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mantar"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"                />
+            <CheckBox
+                android:id="@+id/turşu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Turşu"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/domates"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Domates"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                />
+            <CheckBox
+                android:id="@+id/sogan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Soğan"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                android:textSize="12sp"
+                />
+            <CheckBox
+                android:id="@+id/marul"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Marul"
+                android:textSize="12sp"
+                android:textColor="@android:color/black"
+                android:buttonTint="@color/black"
+                />
+        </LinearLayout>
+        <Button
+            android:id="@+id/kydtbtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="KAYDET"
+            android:backgroundTint="@color/black"
+            android:layout_marginStart="158dp"
+            android:layout_marginTop="15dp"
+            />
+        <TextView
+            android:id="@+id/tutar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TUTAR : "
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <TextView
+            android:id="@+id/afied"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HMBRGR OLSUN"
+            android:layout_marginTop="60dp"
+            android:textSize="20sp"
+            android:layout_marginStart="135dp"
+            android:fontFamily="@font/bonfire"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
